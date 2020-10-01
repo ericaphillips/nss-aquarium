@@ -1,0 +1,14 @@
+.fishes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 16%;
+    justify-content: space-between;
+}
+
+.fish {
+    border: 1px solid #2DD8A8;
+    padding: 3px;
+    margin: 1px;
+    font-family: sans-serif;
+    text-align: center;
+}
