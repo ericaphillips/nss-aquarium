@@ -24,6 +24,7 @@ main {
 
 .leftofpage {
     align-items: flex-start;  
+    width: 75%;
     flex-basis: 80%; 
 }
 
@@ -35,6 +36,8 @@ main {
     border-left: 1px solid #7CEFE9;
     border-right: 1px solid #7CEFE9;
     border-bottom: 1px solid #7CEFE9;
+    border-top: 1px solid #7CEFE9;
+    width: 25%;
 }
 
 h3 {
