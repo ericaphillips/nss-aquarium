@@ -3,16 +3,30 @@
  */
 
 import { useFish } from './FishDataProvider.js'
+import { Fish } from './Fish.js'
 export const FishList = () => {
     //Reference to `<article class="content">`
+   
     const contentElement = document.querySelector(".topLeft")
     const fishes = useFish()
 
-    //add to existing HTML in the content element
+    // console.log(contentElement)
+
+    /*
+      Invoke the Fish component function
+      and pass the current fish object as an argument.
+      Each time, add the return value to the
+      fishHTMLRepresentations variable with `+=`
+    */
+    let fishHTMLRepresentations = ""
+    for (const fish of fishes) {
+        fishHTMLRepresentations += Fish(fish)
+    }
+
+    //add to existing HTML in the contentElement
     contentElement.innerHTML += `
     <article class="fishList">
-    <h3>All of the fish!</h3>
-    <div></div>
+        ${fishHTMLRepresentations}
     </article>
     `
 }
