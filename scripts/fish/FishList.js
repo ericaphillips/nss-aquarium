@@ -10,6 +10,9 @@ export const FishList = () => {
     const contentElement = document.querySelector(".topLeft")
     const fishes = useFish()
 
+    
+    //const fishes = mostHolyFish()
+
     // console.log(contentElement)
 
     /*
